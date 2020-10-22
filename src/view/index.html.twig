@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+
+        {% block card %}
+        <div class="container-fluid " >
+            <div class="row">
+
+            {% for product in products %}
+                            <div class="col-lg-4">
+                    <div class="card" style="width: 10rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">{{ product }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+        {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
